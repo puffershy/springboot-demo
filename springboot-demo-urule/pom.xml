@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.puffer.demo</groupId>
+		<artifactId>springboot-demo-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>springboot-urule</artifactId>
+	<packaging>jar</packaging>
+
+	<properties>
+		<urule.version>2.1.4</urule.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.bstek.urule</groupId>
+			<artifactId>urule-console</artifactId>
+			<version>${urule.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-jdk14</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+
+</project>
